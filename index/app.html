@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="game.js"></script>
+
+</head>
+
+<body onresize="ajustaTamanhoPalco()">
+
+    <div class="painel">
+        <div class="vida">
+            <img src="imagens/coracao_vazio.png">
+            <img src="imagens/coracao_cheio.png">
+            <img src="imagens/coracao_cheio.png">
+        </div>
+        <div class="cronometro">
+            Tempo restante: ?
+        </div>
+
+    </div>
+
+    <script>
+        posicaoRandom()
+
+        setInterval(function () {
+            posicaoRandom()
+        }, 1000)
+    </script>
+</body>
+
+</html>
